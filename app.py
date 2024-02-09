@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify
 import pandas as pd
 
 app = Flask(__name__)
+@app.route('/')
+def homePage():
+    return "Welcome to the Meal Generator API!"
 
 def calculate_amr(age, weight, height, gender, activity_level):
     if gender.lower() == 'female':
