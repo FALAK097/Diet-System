@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import pandas as pd
 
 app = Flask(__name__)
-@app.route('/')
+@app.route('/home')
 def homePage():
     return "Welcome to the Meal Generator API!"
 
